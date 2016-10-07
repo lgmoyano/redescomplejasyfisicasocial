@@ -29,6 +29,7 @@ int main() {
   igraph_t g;
   igraph_bool_t simple;
 
+  //create a small N=100 directed BA network (IGRAPH_BARABASI_PSUMTREE)
   igraph_barabasi_game(/* graph=    */ &g, 
 		       /* n=        */ 100,
 		       /* power=    */ 1.0,
@@ -48,7 +49,7 @@ int main() {
   igraph_destroy(&g);
   
   /* ============================== */
-
+  //same as before with another algorithm (IGRAPH_BARABASI_PSUMTREE_MULTIPLE)
   igraph_barabasi_game(/* graph=    */ &g, 
 		       /* n=        */ 100,
 		       /* power=    */ 1.0,
@@ -68,7 +69,7 @@ int main() {
   igraph_destroy(&g);
 
   /* ============================== */
-
+  // again (IGRAPH_BARABASI_BAG)
   igraph_barabasi_game(/* graph=    */ &g, 
 		       /* n=        */ 100,
 		       /* power=    */ 1.0,
