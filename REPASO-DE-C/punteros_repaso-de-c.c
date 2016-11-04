@@ -5,8 +5,7 @@
 //Con "#include" puedo incorporar códigos ajenos, algunos vienen por default con C
 //stdio viene de "standard in/out" y contiene la función "printf"
 #include <stdio.h> // para usar printf()
-#include <stdlib.h> //para usar atoi() y atol()
-#include <time.h> // para usar time()
+#include <stdlib.h> //para usar atoi()
 
 //todos los programas de C tienen que tener una función main()
 int main(int argc, char *argv[]){
@@ -36,7 +35,7 @@ int main(int argc, char *argv[]){
   printf("--------------------------------------------------\n");
 
   //Cambio el valor usando el puntero y verifico todo de nuevo, pero usando c
-  *pc=atoi(argv[1]);
+  *pc=atoi(argv[1]); //la función atoi, que la saco de sdtlib.h, convierte una variable char (como se define argv[]) a un entero
   printf("Cambio el contenido al cual pc apunta a %d\n", *pc);
   printf("Imprimo la dirección de memoria de c: %d\n", &c);
   printf("Imprimo el contenido de la variable c: %d\n\n", c);
