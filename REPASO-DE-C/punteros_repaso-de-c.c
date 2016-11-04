@@ -13,6 +13,8 @@ int main(int argc, char *argv[]){
   int *pc; 			  // pc es un puntero a un entero, puede contener una dirección de memoria que contenga a su vez un enetero
   int i, c;			  // c puede contener a un entero
   
+
+  //ejemplo basado en http://www.programiz.com/c-programming/c-pointers
   //Ponemos un valor en la variable c, vemos en que dirección de memoria está y verificamos su contenido
   c=22;
   printf("Acabo de inicializar la variable c con el valor 22\n");
