@@ -1,5 +1,5 @@
 /* Código que demuestra algunos puntos de C*/
-// compilo con gcc igraph_repaso-de-C.c `pkg-config --libs --cflags igraph` -o igraph_repaso-de-C.x
+// compilo con gcc igraph_repaso-de-c.c `pkg-config --libs --cflags igraph` -o igraph_repaso-de-c.x
 // ejecuto con, por ejemplo, ./igraph_repaso-de-c.x 300
 
 //Con "#include" puedo incorporar códigos ajenos, algunos vienen por default con C
